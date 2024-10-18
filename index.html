@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Neon Blue Background with Button</title>
+    <title>Documentation</title>
     <style>
         /* Make the background neon blue and fill the entire screen */
         body, html {
@@ -11,15 +11,17 @@
             padding: 0;
             height: 100%;
             display: flex;
+            flex-direction: column;
             justify-content: center;
             align-items: center;
             background-color: #0ff; /* Neon blue */
             font-family: Arial, sans-serif;
         }
 
-        /* Container for centering the button */
+        /* Container for centering the image and button */
         .container {
             text-align: center;
+            margin-bottom: 50px;
         }
 
         /* Styling the button */
@@ -41,18 +43,50 @@
             box-shadow: 0 0 15px rgba(0, 255, 255, 0.9), 0 0 30px rgba(0, 255, 255, 0.9);
         }
 
-        /* Responsive design: Button adjusts for smaller screens */
+        /* Circular avatar image */
+        .avatar {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            border: 4px solid #000; /* Black border around the avatar */
+            box-shadow: 0 0 15px rgba(0, 255, 255, 0.7), 0 0 30px rgba(0, 255, 255, 0.7);
+            margin-bottom: 20px;
+        }
+
+        /* Footer styling */
+        footer {
+            position: absolute;
+            bottom: 10px;
+            text-align: center;
+            color: #000; /* Black text */
+            font-size: 16px;
+        }
+
+        /* Responsive design: Button and footer adjust for smaller screens */
         @media (max-width: 600px) {
             .btn {
                 padding: 10px 20px;
                 font-size: 16px;
+            }
+            footer {
+                font-size: 14px;
             }
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <a href="DalaBoda pro1.pdf" class="btn">Click Me</a>
+        <!-- Circular Avatar Image -->
+        <img src="avatar.png" alt="Avatar" class="avatar">
+
+        <!-- Documentation Button -->
+        <a href="#" class="btn">View Documentation</a>
     </div>
+
+    <!-- Footer -->
+    <footer>
+        Dalaboda Documentation prepared by Ally M Waziri<br>
+        Phone no: +255 694 387 909 / +255 743 387 909
+    </footer>
 </body>
 </html>
