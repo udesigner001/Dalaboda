@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Neon Blue Background with Button</title>
+    <style>
+        /* Make the background neon blue and fill the entire screen */
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #0ff; /* Neon blue */
+            font-family: Arial, sans-serif;
+        }
+
+        /* Container for centering the button */
+        .container {
+            text-align: center;
+        }
+
+        /* Styling the button */
+        .btn {
+            padding: 15px 30px;
+            background-color: #000; /* Black button */
+            color: #0ff; /* Neon blue text */
+            font-size: 20px;
+            font-weight: bold;
+            text-decoration: none;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 255, 255, 0.7), 0 0 20px rgba(0, 255, 255, 0.7);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        /* Button hover effect */
+        .btn:hover {
+            transform: scale(1.1);
+            box-shadow: 0 0 15px rgba(0, 255, 255, 0.9), 0 0 30px rgba(0, 255, 255, 0.9);
+        }
+
+        /* Responsive design: Button adjusts for smaller screens */
+        @media (max-width: 600px) {
+            .btn {
+                padding: 10px 20px;
+                font-size: 16px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <a href="#" class="btn">Click Me</a>
+    </div>
+</body>
+</html>
