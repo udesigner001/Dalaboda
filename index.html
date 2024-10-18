@@ -18,10 +18,14 @@
             font-family: Arial, sans-serif;
         }
 
-        /* Container for centering the image and button */
-        .container {
-            text-align: center;
-            margin-bottom: 50px;
+        /* Circular avatar image */
+        .avatar {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            border: 4px solid #000; /* Black border around the avatar */
+            box-shadow: 0 0 15px rgba(0, 255, 255, 0.7), 0 0 30px rgba(0, 255, 255, 0.7);
+            margin-bottom: 20px; /* Add space between image and button */
         }
 
         /* Styling the button */
@@ -43,20 +47,9 @@
             box-shadow: 0 0 15px rgba(0, 255, 255, 0.9), 0 0 30px rgba(0, 255, 255, 0.9);
         }
 
-        /* Circular avatar image */
-        .avatar {
-            width: 150px;
-            height: 150px;
-            border-radius: 50%;
-            border: 4px solid #000; /* Black border around the avatar */
-            box-shadow: 0 0 15px rgba(0, 255, 255, 0.7), 0 0 30px rgba(0, 255, 255, 0.7);
-            margin-bottom: 20px;
-        }
-
         /* Footer styling */
         footer {
-            position: absolute;
-            bottom: 10px;
+            margin-top: 50px;
             text-align: center;
             color: #000; /* Black text */
             font-size: 16px;
@@ -75,15 +68,13 @@
     </style>
 </head>
 <body>
-    <div class="container">
-        <!-- Circuylar Avatar Image -->
-        <img src="1718740368259.jpg" alt="Avatar" class="avatar">
+    <!-- Circular Avatar Image Centered -->
+    <img src="avatar.png" alt="Avatar" class="avatar">
 
-        <!-- Documentation Button -->
-        <a href="#" class="btn">View Documentation</a>
-    </div>
+    <!-- Documentation Button Centered Below Image -->
+    <a href="#" class="btn">View Documentation</a>
 
-    <!-- Footer -->
+    <!-- Footer Centered at Bottom -->
     <footer>
         Dalaboda Documentation prepared by Ally M Waziri<br>
         Phone no: +255 694 387 909 / +255 743 387 909
